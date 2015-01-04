@@ -1,0 +1,223 @@
+@font-face {
+    font-family: avenir;
+    src: url(fonts/AvenirNextLTPro-Regular.otf);
+}
+
+@font-face {
+    font-family: garamond;
+    src: url(fonts/GaramondPremrPro.otf);
+}
+
+body {
+    margin: 0;
+}
+
+.viewport-height-page {
+    width: 100%;
+    height: 100vh;
+    min-height: 400px;
+}
+
+.vertical-middle {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.landing-page {
+    background: url(splash_back.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.landing-title {
+    font-size: 14em;
+}
+
+.landing-subtitle {
+    font-family: avenir;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.landing-next-button {
+    background: white;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 2em;
+    color: #F39B3A;
+}
+
+
+.story-page {
+    width: 100%;
+    background-color: white;
+    padding: 20px 0;
+}
+
+.story-title {
+    font-family: avenir;
+    text-align: center;
+    font-size: 3em;
+}
+
+.sangeet-page {
+    background: url(sangeet_back.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.sangeet-content {
+    width: 50%;
+    padding: 5% 5% 5% 0;
+    float: right;
+    text-align: right;
+}
+
+.sangeet-title {
+    font-family: avenir;
+    font-weight: normal;
+    padding: 10px 0;
+    font-size: 3.5em;
+}
+
+.sangeet-subtitle {
+    font-family: garamond;
+    padding: 5px 0;
+    font-size: 2.3em;
+}
+
+.sangeet-body {
+    font-family: garamond;
+    font-size: 1.5em;
+    float: right;
+    width: 60%;
+}
+
+.wedding-page {
+    background: url(wedding_back.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.wedding-content {
+    width: 50%;
+    padding: 5% 0 5% 3%;
+    float: left;
+    text-align: left;
+}
+
+.wedding-title {
+    font-family: avenir;
+    padding: 10px 0;
+    font-size: 3.1em;
+}
+
+.wedding-subtitle {
+    font-family: garamond;
+    padding: 5px 0;
+    font-size: 2.3em;
+}
+
+.wedding-body {
+    font-family: garamond;
+    font-size: 1.5em;
+    width: 60%;
+}
+
+.team-page {
+    width: 100%;
+    background-color: white;
+    padding: 20px 0;
+}
+
+.team-title {
+    font-family: avenir;
+    text-align: center;
+    font-size: 3em;
+}
+
+.rsvp-page {
+    background: url(rsvp_back.jpg);
+    background-size: cover;
+    color: white;
+    padding: 20px 0;
+}
+
+.rsvp-title {
+    font-family: avenir;
+    text-align: center;
+    font-size: 5em;
+    padding: 45px 0;
+}
+
+.rsvp-form {
+    text-align: center;
+}
+
+.rsvp-form-row {
+    color: black;
+    padding: 10px 0;
+    font-size: 2em;
+}
+
+.styled-select {
+    background-color: #ffffff;
+    border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+}
+
+.rsvp-form-row input {
+    border: none;
+    width: 100%;
+    border-radius: 1000px;
+}
+
+.rsvp-form-row .rsvp-select {
+    -webkit-appearance: none;
+    padding-left: 15px;
+    border-radius: 1000px;
+    font-size: 1em;
+    border: none;
+    width: 100%;
+    background: url(arrow.png) no-repeat 95% 0;
+}
+
+.rsvp-form-row button {
+    background-color: #ffffff;
+    border-radius: 1000px;
+    padding: 0 10px;
+}
+
+.rsvp-form-row optgroup{
+    font-size: 1em;
+}
+
+.rsvp-form-row option.rsvp-option{
+    font-size: 2em;
+}
+
+.contact-page {
+    background-color: #F39B3A;
+    color: white;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    .sangeet-content {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .wedding-content {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+}
