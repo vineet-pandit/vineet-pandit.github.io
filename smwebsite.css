@@ -10,6 +10,7 @@
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 .viewport-height-page {
@@ -28,13 +29,14 @@ body {
 
 .landing-page {
     background: url(splash_back.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     text-align: center;
     color: white;
 }
 
 .landing-title {
     font-size: 14em;
+    font-weight: bold;
 }
 
 .landing-subtitle {
@@ -62,11 +64,12 @@ body {
     font-family: avenir;
     text-align: center;
     font-size: 3em;
+    font-weight: bold;
 }
 
 .sangeet-page {
     background: url(sangeet_back.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     color: white;
 }
 
@@ -99,7 +102,7 @@ body {
 
 .wedding-page {
     background: url(wedding_back.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     color: white;
 }
 
@@ -112,6 +115,7 @@ body {
 
 .wedding-title {
     font-family: avenir;
+    font-weight: normal;
     padding: 10px 0;
     font-size: 3.1em;
 }
@@ -136,13 +140,35 @@ body {
 
 .team-title {
     font-family: avenir;
+    font-weight: bold;
     text-align: center;
     font-size: 3em;
 }
 
+.team-content .col-sm-4 {
+    text-align: center;
+}
+
+.photo-title {
+    font-family: avenir;
+    font-size: 2em;
+}
+
+.photo-subtitle {
+    font-family: garamond;
+    font-size: 1.5em;
+    color: grey;
+}
+
+.photo-body {
+    font-family: garamond;
+    font-size: 1.1em;
+    color: gray;
+}
+
 .rsvp-page {
     background: url(rsvp_back.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     color: white;
     padding: 20px 0;
 }
@@ -151,7 +177,8 @@ body {
     font-family: avenir;
     text-align: center;
     font-size: 5em;
-    padding: 45px 0;
+    font-weight: bold;
+    margin: 80px 0;
 }
 
 .rsvp-form {
@@ -190,7 +217,9 @@ body {
 .rsvp-form-row button {
     background-color: #ffffff;
     border-radius: 1000px;
-    padding: 0 10px;
+    padding: 0 40px;
+    margin: 60px 0;
+    border: none;
 }
 
 .rsvp-form-row optgroup{
@@ -202,8 +231,60 @@ body {
 }
 
 .contact-page {
-    background-color: #F39B3A;
+    background: url(contact_back.jpg);
+    background-size: 100% 100%;
     color: white;
+}
+
+.contact-title {
+    font-family: avenir;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-content {
+    width: 50%;
+    margin: 2%;
+}
+
+.contact-img{
+    text-align: center;
+}
+
+.contact-info {
+    font-family: garamond;
+    font-size: 1.5em;
+}
+
+.message-title {
+    font-family: avenir;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.message-content {
+    text-align:center;
+}
+
+.message-form-row {
+    padding: 10px 5px;
+    width: 80%
+}
+
+.message-form-row input {
+    border: none;
+    border-radius: 1000px;
+    width: 100%
+}
+
+.message-form-row textarea {
+    border: none;
+    border-radius: 1000px;
+    height: 20%
+    overflow: hidden;
+    width: 100%
 }
 
 @media only screen
