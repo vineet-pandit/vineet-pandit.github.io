@@ -61,11 +61,32 @@ body {
     padding: 20px 0;
 }
 
+.story-page {
+    padding: 6%;
+}
+
 .story-title {
     font-family: avenir;
     text-align: center;
     font-size: 3.5em;
     font-weight: bold;
+}
+
+.story-item-title {
+    font-family: avenir;
+    font-size: 1.6em;
+}
+
+.story-item-subtitle {
+    font-family: garamond;
+    font-size: 1.4em;
+    color: grey;
+}
+
+.story-item-content {
+    font-family: garamond;
+    font-size: 1em;
+    color: gray;
 }
 
 .sangeet-page {
