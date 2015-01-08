@@ -29,7 +29,8 @@ body {
 
 .landing-page {
     background: url(splash_back.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     text-align: center;
     color: white;
 }
@@ -63,26 +64,27 @@ body {
 .story-title {
     font-family: avenir;
     text-align: center;
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: bold;
 }
 
 .sangeet-page {
     background: url(sangeet_back.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     color: white;
 }
 
 .sangeet-content {
-    width: 50%;
-    padding: 5% 5% 5% 0;
+    width: 75%;
+    padding: 5% 15% 5% 0;
     float: right;
     text-align: right;
 }
 
 .sangeet-title {
     font-family: avenir;
-    font-weight: normal;
+    font-weight: bold;
     padding: 10px 0;
     font-size: 3.5em;
 }
@@ -102,22 +104,23 @@ body {
 
 .wedding-page {
     background: url(wedding_back.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     color: white;
 }
 
 .wedding-content {
-    width: 50%;
-    padding: 5% 0 5% 3%;
+    width: 75%;
+    padding: 5% 0 5% 15%;
     float: left;
     text-align: left;
 }
 
 .wedding-title {
     font-family: avenir;
-    font-weight: normal;
+    font-weight: bold;
     padding: 10px 0;
-    font-size: 3.1em;
+    font-size: 3.5em;
 }
 
 .wedding-subtitle {
@@ -142,10 +145,11 @@ body {
     font-family: avenir;
     font-weight: bold;
     text-align: center;
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
-.team-content .col-sm-4 {
+.team-content .team-member {
+    padding: 4% 0;
     text-align: center;
 }
 
@@ -168,7 +172,8 @@ body {
 
 .rsvp-page {
     background: url(rsvp_back.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 20px 0;
 }
@@ -176,7 +181,7 @@ body {
 .rsvp-title {
     font-family: avenir;
     text-align: center;
-    font-size: 5em;
+    font-size: 3.5em;
     font-weight: bold;
     margin: 0 0 80px 0;
 }
@@ -188,10 +193,11 @@ body {
 .rsvp-form-row {
     color: black;
     padding: 10px 0;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .styled-select {
+    font-family: garamond;
     background-color: #ffffff;
     border-radius: 1000px;
     -webkit-border-radius: 1000px;
@@ -205,6 +211,7 @@ body {
 }
 
 .rsvp-form-row .rsvp-select {
+    font-family: garamond;
     -webkit-appearance: none;
     padding-left: 15px;
     border-radius: 1000px;
@@ -227,25 +234,24 @@ body {
 }
 
 .rsvp-form-row option.rsvp-option{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .contact-page {
     background: url(contact_back.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     color: white;
 }
 
 .contact-title {
     font-family: avenir;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     text-align: center;
 }
 
 .contact-content {
-    display: none;
-    width: 50%;
     margin: 2%;
 }
 
@@ -259,20 +265,20 @@ body {
 }
 
 .message-content {
-    display: none;
     text-align:center;
 }
 
 .message-title {
     font-family: avenir;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     text-align: center;
 }
 
 .message-form-row {
     padding: 10px 5px;
-    width: 80%
+    width: 80%;
+    margin: auto;
 }
 
 .message-form-row input {
@@ -290,12 +296,12 @@ body {
 }
 
 @media only screen
-and (min-width : 320px)
-and (max-width : 480px) {
+and (max-width : 640px) {
     .sangeet-content {
         width: 100%;
         float: none;
         text-align: center;
+        padding: 5%;
     }
 
     .sangeet-body {
@@ -306,6 +312,7 @@ and (max-width : 480px) {
         width: 100%;
         float: none;
         text-align: center;
+        padding: 5%;
     }
 
     .wedding-body {
