@@ -89,6 +89,18 @@ body {
     color: gray;
 }
 
+.story-item {
+    display: table;
+}
+
+.story-photo {
+    text-align: center;
+}
+
+.story-photo img {
+    width: 80%;
+}
+
 .sangeet-page {
     background: url(sangeet_back.jpg);
     background-size: cover;
@@ -286,6 +298,7 @@ body {
 }
 
 .message-content {
+    margin: 2%;
     text-align:center;
 }
 
@@ -310,7 +323,7 @@ body {
 
 .message-form-row textarea {
     border: none;
-    border-radius: 1000px;
+    border-radius: 20px;
     height: 20%
     overflow: hidden;
     width: 100%
