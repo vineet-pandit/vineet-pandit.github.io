@@ -15,16 +15,9 @@ body {
 
 .viewport-height-page {
     width: 100%;
-    height: 100vh;
     min-height: 400px;
-}
-
-.vertical-middle {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
 }
 
 .landing-page {
@@ -33,6 +26,10 @@ body {
     background-position: center;
     text-align: center;
     color: white;
+}
+
+.landing-content {
+    width: 100%;
 }
 
 .landing-subtitle {
@@ -104,7 +101,7 @@ body {
 }
 
 .sangeet-content {
-    width: 75%;
+    width: 100%;
     padding: 5% 15% 5% 0;
     float: right;
     text-align: right;
@@ -138,7 +135,7 @@ body {
 }
 
 .wedding-content {
-    width: 75%;
+    width: 100%;
     padding: 5% 0 5% 15%;
     float: left;
     text-align: left;
@@ -206,6 +203,10 @@ body {
     background-position: center;
     color: white;
     padding: 20px 0;
+}
+
+.rsvp-content {
+    width: 100%;
 }
 
 .rsvp-title {
@@ -276,6 +277,10 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
+}
+
+.contact-container {
+    width: 100%;
 }
 
 .contact-title {
@@ -363,7 +368,7 @@ and (max-width : 640px) {
         width: 100%;
     }
 
-    .contact-page {
+    .viewport-height-page {
         height: auto;
         min-height: 100vh;
     }

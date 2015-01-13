@@ -3,13 +3,23 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/javascript" src="jquery-2.1.3.js"></script>
+    <script type="application/javascript" src="main.js"></script>
+    <script type="application/javascript">
+        var height = window.innerHeight,
+                style = $("<style>"),
+                css = ".viewport-height-page { height: " + height + "px }";
+        style.html(css);
+        $("head").append(style);
+        console.log("appended");
+    </script>
     <link rel="stylesheet" type="text/css" href="smwebsite.css"/>
     <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
     <title></title>
 </head>
 <body>
 <div class="landing-page viewport-height-page">
-    <div class="landing-content vertical-middle">
+    <div class="landing-content">
         <div class="landing-title">
             <img src="sm.png"/>
         </div>
@@ -141,7 +151,7 @@
     </div>
 </div>
 <div class="sangeet-page viewport-height-page">
-    <div class="sangeet-content vertical-middle">
+    <div class="sangeet-content">
         <div class="sangeet-title">
             Sangeet & Cocktails
         </div>
@@ -159,7 +169,7 @@
     </div>
 </div>
 <div class="wedding-page viewport-height-page">
-    <div class="wedding-content vertical-middle">
+    <div class="wedding-content">
         <div class="wedding-title">
             Wedding and Reception
         </div>
@@ -246,7 +256,7 @@
     </div>
 </div>
 <div class="rsvp-page viewport-height-page">
-    <div class="rsvp-content vertical-middle">
+    <div class="rsvp-content">
         <div class="rsvp-title">
             RSVP
         </div>
@@ -299,7 +309,7 @@
     </div>
 </div>
 <div class="contact-page viewport-height-page container-fluid">
-    <div class="row vertical-middle">
+    <div class="contact-container row">
         <div class="col-sm-offset-1 col-sm-4 contact-content container-fluid">
             <div class="contact-title">Contact us</div>
             <div class="contact-item row">
