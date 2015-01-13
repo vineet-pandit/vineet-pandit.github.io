@@ -289,6 +289,11 @@ body {
     margin: 2%;
 }
 
+.contact-item.row {
+    display: flex;
+    align-items: center;
+}
+
 .contact-img{
     text-align: center;
 }
@@ -361,5 +366,12 @@ and (max-width : 640px) {
     .contact-page {
         height: auto;
         min-height: 100vh;
+    }
+
+    .contact-page .vertical-middle {
+        padding: 10px 4px;
+        top: 0;
+        transform: initial;
+        -webkit-transform: initial;
     }
 }
