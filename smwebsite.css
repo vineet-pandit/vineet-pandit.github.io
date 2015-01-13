@@ -368,9 +368,8 @@ and (max-width : 640px) {
         width: 100%;
     }
 
-    .viewport-height-page {
+    .contact-page.viewport-height-page {
         height: auto;
-        min-height: 100vh;
     }
 
     .contact-page .vertical-middle {

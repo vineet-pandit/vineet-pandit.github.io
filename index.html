@@ -8,7 +8,10 @@
     <script type="application/javascript">
         var height = window.innerHeight,
                 style = $("<style>"),
-                css = ".viewport-height-page { height: " + height + "px }";
+                css = ".viewport-height-page { height: " + height + "px }" +
+                        "@media only screen and (max-width : 640px) {" +
+                        ".contact-page.viewport-height-page { min-height: "
+                        + height + "px }";
         style.html(css);
         $("head").append(style);
         console.log("appended");
