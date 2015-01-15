@@ -24,13 +24,13 @@
 <div class="landing-page viewport-height-page">
     <div class="landing-content">
         <div class="landing-title">
-            <img src="sm.png"/>
+            <img src="icons/sm.png"/>
         </div>
         <div class="landing-subtitle">
             Come celebrate with us
         </div>
         <div class="landing-next-button">
-            <img src="scroll.png"/>
+            <img src="icons/scroll.png"/>
         </div>
     </div>
 </div>
@@ -267,18 +267,19 @@
             <form>
                 <div class="row rsvp-form-row">
                     <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8">
-                        <input class="rsvp-name"/>
+                        <input class="rsvp-name" placeholder="Your name*"/>
                     </div>
                 </div>
                 <div class="row rsvp-form-row">
                     <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8">
-                        <input class="rsvp-email"/>
+                        <input class="rsvp-email" placeholder="Email*"/>
                     </div>
                 </div>
                 <div class="row rsvp-form-row">
                     <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8">
                         <div class="styled-select">
                             <select class="rsvp-response rsvp-select">
+                                <option value="" class="disabled-option" disabled selected>Response*</option>
                                 <option value="yes">Yes</option>
                                 <option value="no">No</option>
                                 <option value="maybe">Maybe</option>
@@ -290,21 +291,20 @@
                     <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8">
                         <div class="styled-select">
                             <select class="rsvp-count rsvp-select">
-                                <optgroup>
-                                    <option class="rsvp-option" value="0">0</option>
-                                    <option class="rsvp-option" value="1">1</option>
-                                    <option class="rsvp-option" value="2">2</option>
-                                    <option class="rsvp-option" value="3">3</option>
-                                    <option class="rsvp-option" value="4">4</option>
-                                    <option class="rsvp-option" value="5">5</option>
-                                </optgroup>
+                                    <option value="" class="disabled-option" disabled selected>Attendees*</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
                             </select>
                         </div>
                     </div>
                 </div>
                 <div class="row rsvp-form-row">
                     <div class="col-md-offset-4 col-md-4 col-xs-offset-2 col-xs-8">
-                        <button class="rsvp-submit">Submit</button>
+                        <button class="rsvp-submit"><img src="icons/submit_back.png"/> </button>
                     </div>
                 </div>
             </form>
@@ -316,15 +316,15 @@
         <div class="col-sm-offset-1 col-sm-4 contact-content container-fluid">
             <div class="contact-title">Contact us</div>
             <div class="contact-item row">
-                <span class="contact-img col-xs-3"><img src="phone.png"/></span>
+                <span class="contact-img col-xs-3"><img src="icons/phone.png"/></span>
                 <span class="contact-info col-xs-9">+91 9823527700</span>
             </div>
             <div class="contact-item row">
-                <span class="contact-img col-xs-3"><img src="email.png"/></span>
+                <span class="contact-img col-xs-3"><img src="icons/email.png"/></span>
                 <span class="contact-info col-xs-9">info@mnmwedding.com</span>
             </div>
             <div class="contact-item row">
-                <span class="contact-img col-xs-3"><img src="home.png"/></span>
+                <span class="contact-img col-xs-3"><img src="icons/home.png"/></span>
                 <span class="contact-info col-xs-9">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</span>
             </div>
         </div>
@@ -333,13 +333,13 @@
             <div class="message-title">Leave a message</div>
             <form>
                 <div class="message-form-row">
-                    <input class="name"/>
+                    <input class="name" placeholder="Your name*"/>
                 </div>
                 <div class="message-form-row">
-                    <input class="email"/>
+                    <input class="email" placeholder="Email*"/>
                 </div>
                 <div class="message-form-row">
-                    <textarea class="message" rows="6"/>
+                    <textarea class="message" rows="4" placeholder="Type your message here"></textarea>
                 </div>
             </form>
         </div>
