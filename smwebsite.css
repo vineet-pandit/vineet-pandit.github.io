@@ -21,7 +21,10 @@ body {
 }
 
 .landing-page {
-    background: url(splash_back.jpg);
+    background:
+        url(backgrounds/landing_back1.png),
+        url(backgrounds/landing_back2.png);
+    background-color: #f59b14;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -47,6 +50,7 @@ body {
 
 .story-page {
     padding: 6%;
+    padding-bottom: 0;
 }
 
 .story-page .row{
@@ -90,11 +94,12 @@ body {
 }
 
 .story-photo img {
-    width: 80%;
+    height: 100%;
 }
 
 .sangeet-page {
-    background: url(sangeet_back.jpg);
+    background: url(backgrounds/sangeet_back.png);
+    background-color: #465a6e;
     background-size: cover;
     background-position: center;
     color: white;
@@ -128,7 +133,8 @@ body {
 }
 
 .wedding-page {
-    background: url(wedding_back.jpg);
+    background: url(backgrounds/wedding_back.png);
+    background-color: #f59b14;
     background-size: cover;
     background-position: center;
     color: white;
@@ -198,7 +204,8 @@ body {
 }
 
 .rsvp-page {
-    background: url(rsvp_back.jpg);
+    background: url(backgrounds/rsvp_back.png);
+    background-color: #465a6e;
     background-size: cover;
     background-position: center;
     color: white;
@@ -273,7 +280,8 @@ body {
 }
 
 .contact-page {
-    background: url(contact_back.jpg);
+    /*background: url();*/
+    background-color: #f59b14;
     background-size: cover;
     background-position: center;
     color: white;
@@ -346,6 +354,17 @@ body {
 
 @media only screen
 and (max-width : 640px) {
+
+    .story-content .col-xs-6.story-photo {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .story-photo img {
+        height: auto;
+        width: 100%;
+    }
+
     .sangeet-content {
         width: 100%;
         float: none;
