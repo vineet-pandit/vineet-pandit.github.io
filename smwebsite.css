@@ -419,3 +419,32 @@ and (max-width : 640px) {
         -webkit-transform: initial;
     }
 }
+
+
+@media only screen
+and (max-width : 480px) 
+and (min-width : 380px) {
+    .story-item-title {
+        font-size: 1.2em;
+    }
+    .story-item-subtitle {
+        font-size: 1.1em;
+    }
+    .story-item-content {
+        font-size: 0.9em;
+    }
+}
+
+
+@media only screen
+and (max-width : 380px) {
+    .story-item-title {
+        font-size: 1.0em;
+    }
+    .story-item-subtitle {
+        font-size: 0.9em;
+    }
+    .story-item-content {
+        font-size: 0.8em;
+    }
+}
