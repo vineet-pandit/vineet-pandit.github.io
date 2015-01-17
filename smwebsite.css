@@ -292,6 +292,13 @@ body {
     color: grey;
 }
 
+.rsvp-successful {
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+    font-size: 4em;
+}
+
 .contact-page {
     /*background: url();*/
     background-color: #f59b14;

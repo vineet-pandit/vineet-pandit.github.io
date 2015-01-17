@@ -8,6 +8,7 @@ $(document).ready(function () {
             response = form.find(".rsvp-response").val(),
             count = form.find(".rsvp-count").val();
         if (email === "" || name === "" || count === null || response === null) {
+            // TODO: handle better
             console.log("Illegal response");
         }
         else {
@@ -20,12 +21,20 @@ $(document).ready(function () {
                     "response": response,
                     "count": count
                 },
-                type: "GET",
+                type: "POST",
                 success: function (response) {
-                    form.addClass("hide");
-                    $(".response-successful").removeClass("hide");
+                    var res = JSON.parse(response)
+                    if(res.success){
+                        form.addClass("hide");
+                        $(".response-successful").removeClass("hide");
+                    }
+                    else {
+                        // TODO: handle better
+                        console.log("error");
+                    }
                 },
                 error: function (response) {
+                    // TODO: handle better
                     console.log("error");
                 }
             });
