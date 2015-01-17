@@ -14,7 +14,6 @@
                         + height + "px }";
         style.html(css);
         $("head").append(style);
-        console.log("appended");
     </script>
     <link rel="stylesheet" type="text/css" href="smwebsite.css"/>
     <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
@@ -263,8 +262,11 @@
         <div class="rsvp-title">
             RSVP
         </div>
+        <div class="response-successful hide">
+            Thank you for your response
+        </div>
         <div class="rsvp-form container-fluid">
-            <form>
+            <form action="#" id="rsvpform">
                 <div class="row rsvp-form-row">
                     <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8">
                         <input class="rsvp-name" placeholder="Your name*"/>
@@ -280,9 +282,9 @@
                         <div class="styled-select">
                             <select class="rsvp-response rsvp-select">
                                 <option value="" class="disabled-option" disabled selected>Response*</option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                                <option value="maybe">Maybe</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Maybe">Maybe</option>
                             </select>
                         </div>
                     </div>
@@ -297,7 +299,6 @@
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
-                                    <option value="5">5</option>
                             </select>
                         </div>
                     </div>
