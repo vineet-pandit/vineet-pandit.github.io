@@ -12,13 +12,13 @@ $(document).ready(function () {
         }
         else {
             $.ajax({
-                url: "https://docs.google.com/forms/d/1DnOat5ILiLlh4RqjrMs1zXC_e6LZeL_kdIFtbDUs4Tk/formResponse",
+                url: "https://script.google.com/macros/s/AKfycbz6Q-mqV6Y2En60KJCUGXkzTTCu997uuRbN5KA4ksH2_8gMljQ/exec",
                 crossDomain: true,
                 data: {
-                    "entry.1995995669": name,
-                    "entry.258603951": email,
-                    "entry.1200986194": response,
-                    "entry.813219062": count
+                    "name": name,
+                    "email": email,
+                    "response": response,
+                    "count": count
                 },
                 type: "GET",
                 success: function (response) {
