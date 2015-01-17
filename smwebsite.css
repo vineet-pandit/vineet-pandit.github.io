@@ -29,6 +29,7 @@ body {
     background-position: center;
     text-align: center;
     color: white;
+    min-height: 520px;
 }
 
 .landing-content {
