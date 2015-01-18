@@ -120,6 +120,10 @@ body {
     font-size: 3.5em;
 }
 
+.sangeet-map-link {
+    font-size: 0.5em;
+}
+
 .sangeet-subtitle {
     font-family: garamond;
     padding: 5px 0;
@@ -159,6 +163,10 @@ body {
     font-family: garamond;
     padding: 5px 0;
     font-size: 2.3em;
+}
+
+.wedding-map-link {
+    font-size: 0.5em;
 }
 
 .wedding-body {
