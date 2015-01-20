@@ -13,7 +13,7 @@ $(document).ready(function () {
         }
         else {
             $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbz6Q-mqV6Y2En60KJCUGXkzTTCu997uuRbN5KA4ksH2_8gMljQ/exec",
+                url: "https://script.google.com/macros/s/AKfycbwIA24BiPhBuoFW9l7mRim7bKhQb9rbppKZZLAqwl-OxgFlGic/exec",
                 crossDomain: true,
                 data: {
                     "name": name,
