@@ -340,15 +340,18 @@
         <div class="col-sm-1"></div>
         <div class="col-sm-offset-1 col-sm-4 message-content">
             <div class="message-title">Leave a message</div>
-            <form>
+            <form action="http://formspree.io/info@mnmwedding.in">
                 <div class="message-form-row">
-                    <input class="name" placeholder="Your name*"/>
+                    <input class="name" name="_subject" placeholder="Your name*"/>
                 </div>
                 <div class="message-form-row">
-                    <input class="email" placeholder="Email*"/>
+                    <input class="email" name="_replyto" placeholder="Email*"/>
                 </div>
                 <div class="message-form-row">
-                    <textarea class="message" rows="4" placeholder="Type your message here"></textarea>
+                    <textarea class="message" name="message" rows="4" placeholder="Type your message here"></textarea>
+                </div>
+                <div class="message-form-row">
+                    <input type="submit" value="Send">
                 </div>
             </form>
         </div>
