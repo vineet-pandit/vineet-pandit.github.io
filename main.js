@@ -46,8 +46,8 @@ $(document).ready(function () {
         event.stopPropagation();
         var form = $(event.target),
             name = form.find(".message-name").val(),
-            email = form.find("message-email").val(),
-            message = form.find("message-content").val();
+            email = form.find(".message-email").val(),
+            message = form.find(".message-content").val();
         if (email === "" || name === "" || message === "") {
             // TODO: handle better
             console.log("Illegal response");
