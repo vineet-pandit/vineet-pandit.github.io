@@ -59,9 +59,9 @@ $(document).ready(function () {
                 crossDomain: true,
                 data:
                 {
-                    _subject : name,
-                    _replyto : email,
-                    message: message
+                    "_subject" : name,
+                    "_replyto" : email,
+                    "message" : message
                 },
                     dataType: "json",
                 success: function (response) {
