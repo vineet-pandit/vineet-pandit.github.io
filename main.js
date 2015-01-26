@@ -54,7 +54,7 @@ $(document).ready(function () {
         }
         else {
             $.ajax({
-                url: "//formspree.io/info@mnmwedding.com",
+                url: "//formspree.io/info@mnmwedding.in",
                 method: "POST",
                 crossDomain: true,
                 data:
