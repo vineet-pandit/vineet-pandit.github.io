@@ -56,13 +56,13 @@ $(document).ready(function () {
             $.ajax({
                 url: "//formspree.io/info@mnmwedding.in",
                 type: "POST",
-                crossDomain: true,
                 data:
                 {
                     "_subject" : name,
                     "_replyto" : email,
                     "message" : message
                 },
+                dataType: "json",
                 success: function (response) {
                     // TODO: handle better
                     console.log("success");
