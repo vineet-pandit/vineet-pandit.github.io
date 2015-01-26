@@ -21,7 +21,7 @@ $(document).ready(function () {
                     "response": response,
                     "count": count
                 },
-                type: "POST",
+                method: "POST",
                 success: function (response) {
                     var res = JSON.parse(response);
                     if(res.success){
@@ -55,12 +55,12 @@ $(document).ready(function () {
         else {
             $.ajax({
                 url: "//formspree.io/info@mnmwedding.in",
-                type: "POST",
+                method: "POST",
                 data:
                 {
-                    "_subject" : name,
+                    "message" : message,
                     "_replyto" : email,
-                    "message" : message
+                    "_subject" : name
                 },
                 dataType: "json",
                 success: function (response) {
