@@ -45,19 +45,34 @@ $(document).ready(function () {
         event.preventDefault();
         event.stopPropagation();
         var form = $(event.target),
-            name = form.find(".message-name"),
-            email = form.find("message-email"),
-            message = form.find("message-content");
+            name = form.find(".message-name").val(),
+            email = form.find("message-email").val(),
+            message = form.find("message-content").val();
         if (email === "" || name === "" || message === "") {
             // TODO: handle better
             console.log("Illegal response");
         }
-        else {$.ajax({
-            url: "//formspree.io/info@mnmwedding.com",
-            method: "POST",
-            data: {_subject: name, _replyto: email, message: message},
-            dataType: "json"
-        });
+        else {
+            $.ajax({
+                url: "formspree.io/info@mnmwedding.com",
+                method: "POST",
+                crossDomain: true,
+                data:
+                {
+                    _subject : name,
+                    _replyto : email,
+                    message: message
+                },
+                    dataType: "json",
+                success: function (response) {
+                    // TODO: handle better
+                    console.log("success");
+                },
+                error: function (response) {
+                    // TODO: handle better
+                    console.log("error");
+                }
+            });
         }
     });
 
