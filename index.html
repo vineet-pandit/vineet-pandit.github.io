@@ -8,13 +8,11 @@
     <script type="application/javascript">
         var height = window.innerHeight,
                 style = $("<style>"),
-                css = ".viewport-height-page { height: " + height + "px }" +
-                        "@media only screen and (max-width : 640px) {" +
-                        ".contact-page.viewport-height-page { min-height: "
-                        + height + "px }";
+                css = ".viewport-height-page { height: " + height + "px }";
         style.html(css);
         $("head").append(style);
     </script>
+    <title>MnM Wedding</title>
     <link rel="stylesheet" type="text/css" href="smwebsite.css"/>
     <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
     <title></title>
@@ -41,7 +39,7 @@
     </div>
     <div class="story-content hidden-xs container-fluid">
         <div class="row">
-            <div class="col-sm-4 story-item">
+            <div class="col-sm-4 story-item story-item-left">
                 <div class="story-item-title">July 22nd 1987</div>
                 <div class="story-item-subtitle">Shradha was born!</div>
                 <div class="story-item-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</div>
@@ -61,7 +59,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4 story-item">
+            <div class="col-sm-4 story-item story-item-left">
                 <div class="story-item-title">December 2012</div>
                 <div class="story-item-subtitle">We met!</div>
                 <div class="story-item-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</div>
@@ -81,7 +79,7 @@
             </div>
             </div>
         <div class="row">
-            <div class="col-sm-4 story-item">
+            <div class="col-sm-4 story-item story-item-left">
                 <div class="story-item-title">July 2014</div>
                 <div class="story-item-subtitle">We got engaged!</div>
                 <div class="story-item-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</div>
@@ -98,7 +96,7 @@
     </div>
     <div class="story-content hidden-sm hidden-md hidden-lg container-fluid">
         <div class="row">
-            <div class="col-xs-7 story-item">
+            <div class="col-xs-7 story-item story-item-left">
                 <div class="story-item-title">July 22nd 1987</div>
                 <div class="story-item-subtitle">Shradha was born!</div>
                 <div class="story-item-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</div>
@@ -108,7 +106,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-7 story-item">
+            <div class="col-xs-7 story-item story-item-left">
                 <div class="story-item-title">November 8th 1988</div>
                 <div class="story-item-subtitle">Mohit was born!</div>
                 <div class="story-item-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</div>
@@ -118,7 +116,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-7 story-item">
+            <div class="col-xs-7 story-item story-item-left">
                 <div class="story-item-title">December 2012</div>
                 <div class="story-item-subtitle">We met!</div>
                 <div class="story-item-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</div>
@@ -128,7 +126,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-7 story-item">
+            <div class="col-xs-7 story-item story-item-left">
                 <div class="story-item-title">March 2013</div>
                 <div class="story-item-subtitle">We fell in love!</div>
                 <div class="story-item-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</div>
@@ -138,7 +136,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-7 story-item">
+            <div class="col-xs-7 story-item story-item-left">
                 <div class="story-item-title">July 2014</div>
                 <div class="story-item-subtitle">We got engaged!</div>
                 <div class="story-item-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</div>
@@ -338,7 +336,7 @@
             </div>
         </div>
         <div class="col-sm-1"></div>
-        <div class="col-sm-offset-1 col-sm-4 message-content">
+        <div class="col-sm-offset-1 col-sm-4 message-form-content">
             <div class="message-title">Leave a message</div>
             <div class="message-successful hide">
                 Your message has been sent

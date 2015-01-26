@@ -90,6 +90,10 @@ body {
     display: table;
 }
 
+.story-item-left {
+    text-align: right;
+}
+
 .story-photo {
     text-align: center;
 }
@@ -219,6 +223,7 @@ body {
     background-position: center;
     color: white;
     padding: 20px 0;
+    min-height: 520px;
 }
 
 .rsvp-content {
@@ -313,6 +318,7 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
+    min-height: 700px;
 }
 
 .contact-container {
@@ -344,7 +350,7 @@ body {
     font-size: 1.5em;
 }
 
-.message-content {
+.message-form-content {
     margin: 2%;
     text-align:center;
 }
@@ -422,10 +428,6 @@ and (max-width : 640px) {
 
     .rsvp-form-row img {
         width: 50%;
-    }
-
-    .contact-page.viewport-height-page {
-        height: auto;
     }
 
     .contact-page .vertical-middle {
