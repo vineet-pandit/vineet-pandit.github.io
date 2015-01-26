@@ -25,7 +25,6 @@ $(document).ready(function () {
                 success: function (response) {
                     var res = JSON.parse(response);
                     if(res.success){
-                        form.addClass("hide");
                         $(".response-successful").removeClass("hide");
                     }
                     else {
@@ -64,7 +63,7 @@ $(document).ready(function () {
                 },
                 dataType: "json",
                 success: function (response) {
-                    // TODO: handle better
+                    $(".message-successful").removeClass("hide");
                     console.log("success");
                 },
                 error: function (response) {
