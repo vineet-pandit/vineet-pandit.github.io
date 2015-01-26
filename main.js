@@ -41,6 +41,26 @@ $(document).ready(function () {
         }
     });
 
+    $("#messageform").on("submit", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        var form = $(event.target),
+            name = form.find(".message-name"),
+            email = form.find("message-email"),
+            message = form.find("message-content");
+        if (email === "" || name === "" || message === "") {
+            // TODO: handle better
+            console.log("Illegal response");
+        }
+        else {$.ajax({
+            url: "//formspree.io/info@mnmwedding.com",
+            method: "POST",
+            data: {_subject: name, _replyto: email, message: message},
+            dataType: "json"
+        });
+        }
+    });
+
     $(".landing-next-button").on("click", function () {
         $('html,body').animate({
             scrollTop: $(".story-page").offset().top
