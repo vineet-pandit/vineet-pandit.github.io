@@ -23,7 +23,7 @@ $(document).ready(function () {
                 },
                 type: "POST",
                 success: function (response) {
-                    var res = JSON.parse(response)
+                    var res = JSON.parse(response);
                     if(res.success){
                         form.addClass("hide");
                         $(".response-successful").removeClass("hide");
@@ -55,7 +55,7 @@ $(document).ready(function () {
         else {
             $.ajax({
                 url: "//formspree.io/info@mnmwedding.in",
-                method: "POST",
+                type: "POST",
                 crossDomain: true,
                 data:
                 {
@@ -63,7 +63,6 @@ $(document).ready(function () {
                     "_replyto" : email,
                     "message" : message
                 },
-                    dataType: "json",
                 success: function (response) {
                     // TODO: handle better
                     console.log("success");
