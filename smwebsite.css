@@ -355,23 +355,23 @@ and (orientation: portrait) {
     .landing-page {
         background: url(mobile_back/landing_back2.png),
         url(mobile_back/landing_back1.jpg);
-        background-size: 100% 100%;
+        background-size: 130% auto;
     }
 
 
     .sangeet-page {
         background: url(mobile_back/sangeet_back.jpg);
-        background-size: 100% 100%;
+        background-size: 130% auto;
     }
 
     .wedding-page {
         background: url(mobile_back/wedding_back.jpg);
-        background-size: 100% 100%;
+        background-size: 130% auto;
     }
 
     .contact-page {
         background: url(mobile_back/contact_back.jpg);
-        background-size: 100% 100%;
+        background-size: 130% auto;
     }
 }
 
