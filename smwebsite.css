@@ -24,12 +24,21 @@ body {
     background:
         url(backgrounds/landing_back2.png),
         url(backgrounds/landing_back1.jpg);
-    background-color: #f59b14;
     background-size: cover;
     background-position: center;
     text-align: center;
     color: white;
     min-height: 520px;
+}
+
+.landing-flowers {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    url(backgrounds/landing_back2.png);
+    background-size: cover;
+    z-index: 1;
+    background-position: center;
 }
 
 .landing-title img {
@@ -115,7 +124,7 @@ body {
     background: url(backgrounds/sangeet_back.jpg);
     background-color: #465a6e;
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
     color: white;
 }
 
@@ -155,7 +164,7 @@ body {
     background: url(backgrounds/wedding_back.jpg);
     background-color: #f59b14;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     color: white;
 }
 
@@ -207,6 +216,11 @@ body {
 .team-content .team-member {
     padding: 4% 0;
     text-align: center;
+}
+
+.photo img {
+    width: 175px;
+    max-width: 175px;
 }
 
 .photo-title {
@@ -267,65 +281,8 @@ body {
     -moz-border-radius: 1000px;
 }
 
-.rsvp-form-row input {
-    border: none;
-    width: 100%;
-    border-radius: 1000px;
-    background: #ffffd7;
-    box-shadow: 2px 2px 2px #888888 inset;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: black;
-}
-
-.rsvp-form-row .rsvp-select {
-    font-family: garamond;
-    -webkit-appearance: none;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 1000px;
-    font-size: 1em;
-    border: none;
-    width: 100%;
-    background: url(icons/rsvp_arrow.png) no-repeat;
-    background-position: right;
-    background-size: contain;
-    background-color: #ffffd7;
-    box-shadow: 2px 2px 2px #888888 inset;
-}
-
-.rsvp-form-row button {
-    background: transparent;
-    border: none;
-    width: 100%;
-}
-
-.rsvp-form-row img {
-    width: 40%;
-}
-
-.rsvp-form-row optgroup{
-    font-size: 1em;
-}
-
-.rsvp-form-row option.rsvp-option{
-    font-size: 1.5em;
-}
-
-.rsvp-form-row option[disabled]{
-    color: grey;
-}
-
-.rsvp-successful {
-    width: 100%;
-    text-align: center;
-    padding: 1%;
-    font-size: 4em;
-}
-
 .contact-page {
-    /*background: url();*/
-    background-color: #f59b14;
+    background: url(backgrounds/contact_back.jpg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -350,10 +307,17 @@ body {
 .contact-item.row {
     display: flex;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .contact-img{
     text-align: center;
+}
+
+.contact-img img{
+    max-width: 50%;
+    vertical-align: middle;
 }
 
 .contact-info {
@@ -361,59 +325,30 @@ body {
     font-size: 1.5em;
 }
 
-.message-form-content {
-    margin: 2%;
-    text-align:center;
-}
-
-.message-title {
-    font-family: avenir;
-    font-size: 2.5em;
-    font-weight: bold;
-    text-align: center;
-}
-
-.message-form-row {
-    padding: 10px 5px;
-    width: 100%;
-    margin: auto;
-}
-
-.message-form-row input {
-    border: none;
-    border-radius: 1000px;
-    width: 100%;
-    background-color: #ffffd7;
-    box-shadow: 2px 2px 2px #888888 inset;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: black;
-}
-
-.message-form-row textarea {
-    border: none;
-    border-radius: 20px;
-    height: 20%;
-    overflow: hidden;
-    width: 100%;
-    background-color: #ffffd7;
-    box-shadow: 2px 2px 2px #888888 inset;
-    padding: 15px;
-    color: black;
-}
 
 @media only screen
 and (max-width : 640px) {
 
+    .landing-title img {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
     .landing-subtitle {
-        font-size: 2em;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 1.7em;
+    }
+
+    .landing-next-button img{
+        max-width: 40px;
     }
 
     .story-item-title {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
     .story-item-subtitle {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .story-content .col-xs-6.story-photo {
         padding-left: 0;
@@ -432,7 +367,16 @@ and (max-width : 640px) {
         padding: 5%;
     }
 
+    .sangeet-title {
+        font-size: 2.3em;
+    }
+
+    .sangeet-subtitle {
+        font-size: 1.7em;
+    }
+
     .sangeet-body {
+        font-size: 1.1em;
         width: 100%;
     }
 
@@ -443,7 +387,16 @@ and (max-width : 640px) {
         padding: 5%;
     }
 
+    .wedding-title {
+        font-size: 2.3em;
+    }
+
+    .wedding-subtitle {
+        font-size: 1.7em;
+    }
+
     .wedding-body {
+        font-size: 1.1em;
         width: 100%;
     }
 
@@ -476,6 +429,11 @@ and (orientation: portrait) {
 
     .wedding-page {
         background: url(mobile_back/wedding_back.jpg);
+        background-size: 100% 100%;
+    }
+
+    .contact-page {
+        background: url(mobile_back/contact_back.jpg);
         background-size: 100% 100%;
     }
 }
