@@ -32,6 +32,10 @@ body {
     min-height: 520px;
 }
 
+.landing-title .img {
+    max-width: 100%;
+}
+
 .landing-content {
     width: 100%;
 }
