@@ -20,6 +20,25 @@ body {
     align-items: center;
 }
 
+/* common font sizes */
+.story-title, .sangeet-title, .wedding-title, .team-title, .contact-title {
+    font-size: 3.5em;
+    font-weight: bold;
+    font-family: avenir;
+}
+
+.landing-subtitle, .story-item-title, .sangeet-subtitle, .wedding-subtitle, .photo-title{
+    font-size: 2em;
+}
+
+.story-item-subtitle, .sangeet-body, .wedding-body, .photo-subtitle, .contact-info {
+    font-size: 1.5em;
+}
+
+.story-item-content, .sangeet-body, .wedding-body {
+    font-size: 1.2em;
+}
+
 .landing-page {
     background:
         url(backgrounds/landing_back2.png),
@@ -27,19 +46,19 @@ body {
     background-size: cover;
     background-position: center;
     text-align: center;
-    color: white;
+    color: #ffffd7;
     min-height: 520px;
 }
 
-.landing-flowers {
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    url(backgrounds/landing_back2.png);
-    background-size: cover;
-    z-index: 1;
-    background-position: center;
-}
+/*.landing-flowers {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-color: transparent;*/
+    /*url(backgrounds/landing_back2.png);*/
+    /*background-size: cover;*/
+    /*z-index: 1;*/
+    /*background-position: center;*/
+/*}*/
 
 .landing-title img {
     max-width: 100%;
@@ -51,8 +70,8 @@ body {
 
 .landing-subtitle {
     font-family: avenir;
-    font-size: 2.5em;
     font-weight: bold;
+    padding: 35px 0;
 }
 
 .landing-next-button img{
@@ -80,21 +99,17 @@ body {
 .story-title {
     font-family: avenir;
     text-align: center;
-    font-size: 3.5em;
-    font-weight: bold;
     color: #465a6e;
 }
 
 .story-item-title {
     font-family: avenir;
-    font-size: 1.6em;
     color: #465a6e;
     font-weight: bold;
 }
 
 .story-item-subtitle {
     font-family: garamond;
-    font-size: 1.4em;
     color: #738291;
 }
 
@@ -116,16 +131,12 @@ body {
     text-align: center;
 }
 
-.story-photo img {
-    max-width: 200px;
-}
-
 .sangeet-page {
     background: url(backgrounds/sangeet_back.jpg);
     background-color: #465a6e;
     background-size: cover;
     background-position: center bottom;
-    color: white;
+    color: #ffffd7;
 }
 
 .sangeet-content {
@@ -139,7 +150,6 @@ body {
     font-family: avenir;
     font-weight: bold;
     padding: 10px 0;
-    font-size: 3.5em;
 }
 
 .sangeet-map-link img{
@@ -150,12 +160,10 @@ body {
 .sangeet-subtitle {
     font-family: garamond;
     padding: 5px 0;
-    font-size: 2.3em;
 }
 
 .sangeet-body {
     font-family: garamond;
-    font-size: 1.5em;
     float: right;
     width: 60%;
 }
@@ -165,7 +173,7 @@ body {
     background-color: #f59b14;
     background-size: cover;
     background-position: center top;
-    color: white;
+    color: #ffffd7;
 }
 
 .wedding-content {
@@ -177,15 +185,12 @@ body {
 
 .wedding-title {
     font-family: avenir;
-    font-weight: bold;
     padding: 10px 0;
-    font-size: 3.5em;
 }
 
 .wedding-subtitle {
     font-family: garamond;
     padding: 5px 0;
-    font-size: 2.3em;
 }
 
 .wedding-map-link img{
@@ -195,21 +200,18 @@ body {
 
 .wedding-body {
     font-family: garamond;
-    font-size: 1.5em;
     width: 60%;
 }
 
 .team-page {
     width: 100%;
     background-color: white;
-    padding: 20px 0;
+    padding: 6%;
 }
 
 .team-title {
     font-family: avenir;
-    font-weight: bold;
     text-align: center;
-    font-size: 3.5em;
     color: #465a6e;
 }
 
@@ -225,83 +227,36 @@ body {
 
 .photo-title {
     font-family: avenir;
-    font-size: 2em;
+    font-weight: bold;
     color: #465a6e;
 }
 
 .photo-subtitle {
     font-family: garamond;
-    font-size: 1.5em;
     color: #738291;
 }
 
 .photo-body {
     font-family: garamond;
-    font-size: 1.1em;
     color: #738291;
-}
-
-.rsvp-page {
-    background: url(backgrounds/rsvp_back.png);
-    background-color: #465a6e;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 20px 0;
-    min-height: 520px;
-}
-
-.rsvp-content {
-    width: 100%;
-}
-
-.rsvp-title {
-    font-family: avenir;
-    text-align: center;
-    font-size: 3.5em;
-    font-weight: bold;
-    margin: 0 0 80px 0;
-}
-
-.rsvp-form {
-    text-align: center;
-}
-
-.rsvp-form-row {
-    color: black;
-    padding: 10px 0;
-    font-size: 1.5em;
-}
-
-.styled-select {
-    font-family: garamond;
-    background-color: #ffffd7;
-    border-radius: 1000px;
-    -webkit-border-radius: 1000px;
-    -moz-border-radius: 1000px;
 }
 
 .contact-page {
     background: url(backgrounds/contact_back.jpg);
     background-size: cover;
     background-position: center;
-    color: white;
-    min-height: 700px;
+    color: #ffffd7;
 }
 
-.contact-container {
+.contact-content {
+    padding: 5%;
     width: 100%;
 }
 
 .contact-title {
     font-family: avenir;
-    font-size: 2.5em;
-    font-weight: bold;
     text-align: center;
-}
-
-.contact-content {
-    margin: 2%;
+    padding: 10px 0;
 }
 
 .contact-item.row {
@@ -321,13 +276,31 @@ body {
 }
 
 .contact-info {
-    font-family: garamond;
-    font-size: 1.5em;
+    font-family: avenir;
 }
 
 
 @media only screen
 and (max-width : 640px) {
+
+    /* common font sizes */
+    .story-title, .sangeet-title, .wedding-title, .team-title, .contact-title {
+        font-size: 2.3em;
+        font-weight: bold;
+        font-family: avenir;
+    }
+
+    .landing-subtitle, .story-item-title, .sangeet-subtitle, .wedding-subtitle, .photo-title{
+        font-size: 1.6em;
+    }
+
+    .story-item-subtitle, .sangeet-body, .wedding-body, .photo-subtitle, .contact-info {
+        font-size: 1.2em;
+    }
+
+    .story-item-content, .sangeet-body, .wedding-body {
+        font-size: 1em;
+    }
 
     .landing-title img {
         padding-left: 20%;
@@ -337,19 +310,12 @@ and (max-width : 640px) {
     .landing-subtitle {
         padding-left: 10%;
         padding-right: 10%;
-        font-size: 1.7em;
     }
 
     .landing-next-button img{
         max-width: 40px;
     }
 
-    .story-item-title {
-        font-size: 1.2em;
-    }
-    .story-item-subtitle {
-        font-size: 1em;
-    }
     .story-content .col-xs-6.story-photo {
         padding-left: 0;
         padding-right: 0;
@@ -367,16 +333,7 @@ and (max-width : 640px) {
         padding: 5%;
     }
 
-    .sangeet-title {
-        font-size: 2.3em;
-    }
-
-    .sangeet-subtitle {
-        font-size: 1.7em;
-    }
-
     .sangeet-body {
-        font-size: 1.1em;
         width: 100%;
     }
 
@@ -387,28 +344,8 @@ and (max-width : 640px) {
         padding: 5%;
     }
 
-    .wedding-title {
-        font-size: 2.3em;
-    }
-
-    .wedding-subtitle {
-        font-size: 1.7em;
-    }
-
     .wedding-body {
-        font-size: 1.1em;
         width: 100%;
-    }
-
-    .rsvp-form-row img {
-        width: 50%;
-    }
-
-    .contact-page .vertical-middle {
-        padding: 10px 4px;
-        top: 0;
-        transform: initial;
-        -webkit-transform: initial;
     }
 }
 
