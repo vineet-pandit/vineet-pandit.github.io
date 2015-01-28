@@ -24,6 +24,8 @@ body {
 .viewport-height-page {
     width: 100%;
     min-height: 400px;
+    display: -webkit-box;
+    display: -webkit-flexbox;
     display: -webkit-flex;
     display: flex;
     align-items: center;
@@ -103,6 +105,8 @@ body {
 }
 
 .story-page .row{
+    display: -webkit-box;
+    display: -webkit-flexbox;
     display: -webkit-flex;
     display: flex;
     align-items: center;
@@ -276,6 +280,8 @@ body {
 }
 
 .contact-item.row {
+    display: -webkit-box;
+    display: -webkit-flexbox;
     display: -webkit-flex;
     display: flex;
     align-items: center;
