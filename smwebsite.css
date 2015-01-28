@@ -325,8 +325,7 @@ and (max-width : 640px) {
     }
 
     .landing-subtitle {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding: 0 10%;
     }
 
     .landing-next-button img{
