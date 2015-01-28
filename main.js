@@ -11,7 +11,7 @@ $(window).load(function () {
     var landingFlowers = $(".landing-flowers");
     landingFlowers.fadeIn(1000);
     landingFlowers.removeAttr('style');
-    landingFlowers.css({'display': 'flex', 'display': '-webkit-flex'});
+    landingFlowers.addClass('flex-display');
     $(".landing-title").fadeIn(2000, 'easeInExpo');
     $(".landing-subtitle").fadeIn(3000, 'easeInExpo');
     $(".landing-next-button-container").fadeIn(4000, 'easeInExpo');
