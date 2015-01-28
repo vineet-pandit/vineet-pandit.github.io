@@ -13,6 +13,14 @@ body {
     overflow-x: hidden;
 }
 
+.no-scroll {
+    overflow-y: hidden;
+}
+
+.animate-opacity {
+
+}
+
 .viewport-height-page {
     width: 100%;
     min-height: 400px;
@@ -41,9 +49,7 @@ body {
 }
 
 .landing-page {
-    background:
-        url(backgrounds/landing_back2.png),
-        url(backgrounds/landing_back1.jpg);
+    background: url(backgrounds/landing_back1.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -51,15 +57,19 @@ body {
     min-height: 520px;
 }
 
-/*.landing-flowers {*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*background-color: transparent;*/
-    /*url(backgrounds/landing_back2.png);*/
-    /*background-size: cover;*/
-    /*z-index: 1;*/
-    /*background-position: center;*/
-/*}*/
+.landing-flowers {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background: url(backgrounds/landing_back2.png);
+    background-size: cover;
+    z-index: 1;
+    background-position: center;
+}
+
+.landing-flowers, .landing-title, .landing-subtitle, .landing-next-button-container {
+    display: none;
+}
 
 .landing-title img {
     max-width: 100%;
@@ -250,6 +260,10 @@ body {
     color: #ffffd7;
 }
 
+.contact-page a {
+    color: #ffffd7;
+}
+
 .contact-content {
     padding: 5%;
     width: 100%;
@@ -356,8 +370,12 @@ and (max-width : 640px) {
 @media only screen
 and (orientation: portrait) {
     .landing-page {
-        background: url(mobile_back/landing_back2.png),
-        url(mobile_back/landing_back1.jpg);
+        background: url(mobile_back/landing_back1.jpg);
+        background-size: 130% auto;
+    }
+
+    .landing-flowers {
+        background: url(mobile_back/landing_back2.png);
         background-size: 130% auto;
     }
 

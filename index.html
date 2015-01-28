@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="application/javascript" src="jquery-2.1.3.js"></script>
+    <script type="application/javascript" src="jquery-ui.js"></script>
     <script type="application/javascript" src="main.js"></script>
     <script type="application/javascript">
         var height = window.innerHeight,
@@ -17,9 +18,9 @@
     <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
     <title></title>
 </head>
-<body>
+<body class="no-scroll">
 <div class="landing-page viewport-height-page">
-    <!--<div class="landing-flowers">-->
+    <div class="landing-flowers viewport-height-page">
         <div class="landing-content">
             <div class="landing-title">
                 <img src="icons/sm.png"/>
@@ -33,7 +34,7 @@
                 </a>
             </div>
         </div>
-    <!--</div>-->
+    </div>
 </div>
 <div class="story-page">
     <div class="story-title">
@@ -200,7 +201,7 @@
     </div>
     <div class="team-content container-fluid">
         <div class="row">
-            <div class="col-sm-offset-2 col-sm-4 col-xs-12 team-member">
+            <div class="col-md-offset-2 col-md-4 col-sm-6 col-xs-12 team-member">
                 <div class="photo">
                     <img src="photo.jpg">
                 </div>
@@ -209,7 +210,7 @@
                     <div class="photo-subtitle">Founder</div>
                 </div>
             </div>
-            <div class="col-sm-4 col-xs-12 team-member">
+            <div class="col-md-4 col-sm-6 col-xs-12 team-member">
                 <div class="photo">
                     <img src="photo.jpg">
                 </div>
@@ -279,16 +280,16 @@
     <div class="contact-content">
         <div class="contact-title">RSVP & Contact</div>
         <div class="contact-item row">
-            <div class="contact-img col-sm-offset-4 col-sm-1 col-xs-3"><img src="icons/rsvp.png"/></div>
-            <div class="contact-info col-sm-3 col-xs-9">attend@mnmwedding.in</div>
+            <div class="contact-img col-sm-offset-4 col-sm-1 col-xs-3"><a href="mailto:attend@mnmwedding.in"><img src="icons/rsvp.png"/></a></div>
+            <div class="contact-info col-sm-3 col-xs-9"><a href="mailto:attend@mnmwedding.in">attend@mnmwedding.in</a></div>
         </div>
         <div class="contact-item row">
-            <div class="contact-img col-sm-offset-4 col-sm-1 col-xs-3"><img src="icons/email.png"/></div>
-            <div class="contact-info col-sm-3 col-xs-9">info@mnmwedding.in</div>
+            <div class="contact-img col-sm-offset-4 col-sm-1 col-xs-3"><a href="mailto:info@mnmwedding.in"><img src="icons/email.png"/></a></div>
+            <div class="contact-info col-sm-3 col-xs-9"><a href="mailto:info@mnmwedding.in">info@mnmwedding.in</a></div>
         </div>
         <div class="contact-item row">
-            <div class="contact-img col-sm-offset-4 col-sm-1 col-xs-3"><img src="icons/phone.png"/></div>
-            <div class="contact-info col-sm-3 col-xs-9">+91 982352770</div>
+            <div class="contact-img col-sm-offset-4 col-sm-1 col-xs-3"><a href="tel:+91982352770"><img src="icons/phone.png"/></a></div>
+            <div class="contact-info col-sm-3 col-xs-9"><a href="tel:+91982352770">+91 982352770</a></div>
         </div>
     </div>
 </div>
