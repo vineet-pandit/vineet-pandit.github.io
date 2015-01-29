@@ -13,10 +13,6 @@ body {
     overflow-x: hidden;
 }
 
-.no-scroll {
-    overflow-y: hidden;
-}
-
 .animate-opacity {
 
 }
@@ -134,10 +130,15 @@ body {
 .story-item-content {
     font-family: garamond;
     color: #738291;
+    max-width: 90%;
 }
 
 .story-item {
     display: table;
+}
+
+.story-item-left .story-item-content{
+    float: right;
 }
 
 .story-item-left {
@@ -182,7 +183,7 @@ body {
 .sangeet-body {
     font-family: garamond;
     float: right;
-    width: 60%;
+    max-width: 35%;
 }
 
 .wedding-page {
@@ -217,7 +218,11 @@ body {
 
 .wedding-body {
     font-family: garamond;
-    width: 60%;
+    max-width: 35%;
+}
+
+.wedding-body div {
+    padding-top: 5px;
 }
 
 .team-page {
@@ -364,6 +369,8 @@ and (max-width : 640px) {
     }
 
     .sangeet-body {
+        padding: 0 4%;
+        max-width: 100%;
         width: 100%;
     }
 
@@ -375,7 +382,13 @@ and (max-width : 640px) {
     }
 
     .wedding-body {
+        padding: 0 6%;
+        max-width: 100%;
         width: 100%;
+    }
+    
+    .contact-page a img {
+        width: 150%;
     }
 }
 
