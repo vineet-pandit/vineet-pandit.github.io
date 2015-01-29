@@ -44,10 +44,10 @@ body {
 }
 
 .sangeet-body, .wedding-body, .photo-subtitle, .contact-info {
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
-.sangeet-body, .wedding-body, .story-item-content {
+.story-item-content {
     font-size: 1.4em;
 }
 
@@ -175,7 +175,7 @@ body {
 }
 
 .sangeet-subtitle {
-    font-family: avenir;
+    font-family: garamond;
     padding: 5px 0;
 }
 
