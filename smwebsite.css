@@ -48,7 +48,7 @@ body {
 }
 
 .sangeet-body, .wedding-body, .story-item-content {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .landing-page {
@@ -175,7 +175,7 @@ body {
 }
 
 .sangeet-subtitle {
-    font-family: garamond;
+    font-family: avenir;
     padding: 5px 0;
 }
 

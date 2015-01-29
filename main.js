@@ -3,7 +3,6 @@ $(document).ready(function () {
         $('html,body').animate({
             scrollTop: $(".story-page").offset().top
         }, 1200, 'easeInOutExpo');
-        $('body').removeClass('no-scroll');
     });
 });
 
