@@ -39,15 +39,15 @@ body {
     font-family: avenir;
 }
 
-.landing-subtitle, .story-item-title, .sangeet-subtitle, .wedding-subtitle, .photo-title{
+.landing-subtitle, .story-item-title, .sangeet-subtitle, .wedding-subtitle, .photo-title, .story-item-subtitle{
     font-size: 2em;
 }
 
-.story-item-subtitle, .sangeet-body, .wedding-body, .photo-subtitle, .contact-info {
+.sangeet-body, .wedding-body, .photo-subtitle, .contact-info {
     font-size: 1.5em;
 }
 
-.story-item-content, .sangeet-body, .wedding-body {
+.sangeet-body, .wedding-body, .story-item-content {
     font-size: 1.2em;
 }
 
@@ -133,7 +133,6 @@ body {
 
 .story-item-content {
     font-family: garamond;
-    font-size: 1em;
     color: #738291;
 }
 
