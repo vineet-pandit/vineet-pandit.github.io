@@ -12,6 +12,9 @@ $(document).ready(function () {
 });
 
 $(window).load(function () {
+    setTimeout (function () {
+        scrollTo(0,0);
+    }, 100);
     var landingFlowers = $(".landing-flowers");
     landingFlowers.fadeIn(1000, 'easeInExpo', function() {
         landingFlowers.addClass('flex-display');
@@ -20,10 +23,6 @@ $(window).load(function () {
         $(".landing-subtitle").fadeIn(2000, 'easeInExpo');
         $(".landing-next-button-container").fadeIn(3000, 'easeInExpo');
     });
-});
-
-$(window).on('beforeunload', function() {
-    $(window).scrollTop(0);
 });
 
 function detectMobile() {
