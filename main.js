@@ -4,6 +4,12 @@ $(document).ready(function () {
             scrollTop: $(".story-page").offset().top
         }, 1200, 'easeInOutExpo');
     });
+
+    var height = $(window).height(),
+        style = $("<style>"),
+        css = ".viewport-height-page { height: " + height + "px }";
+    style.html(css);
+    $("head").append(style);
 });
 
 $(window).load(function () {
