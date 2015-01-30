@@ -1,9 +1,4 @@
 $(document).ready(function () {
-    var height = window.innerHeight,
-        style = $("<style>"),
-        css = ".viewport-height-page { height: " + height + "px }";
-    style.html(css);
-    $("head").append(style);
     $(".landing-next-button").on("click", function () {
         $('html,body').animate({
             scrollTop: $(".story-page").offset().top
