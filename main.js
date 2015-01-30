@@ -1,8 +1,5 @@
 $(document).ready(function () {
-    setTimeout(function () {
-        window.scrollTo(0, 1);
-    }, 0);
-    var height = window.innerHeight,
+    var height = (detectMobile() ? 60 : 0) + window.innerHeight,
         style = $("<style>"),
         css = ".viewport-height-page { height: " + height + "px }";
     style.html(css);
@@ -28,3 +25,19 @@ $(window).load(function () {
 $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
 });
+
+function detectMobile() {
+    if( navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)
+        ){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
